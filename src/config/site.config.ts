@@ -11,7 +11,7 @@ export const siteConfig: Site = {
     "rds",
     "rdsx",
     "rds_agi",
-    "rdsx.dev",
+    "iamvikash.me",
     "github.com/rudrodip",
     "Rudro",
     "programmer",
@@ -34,7 +34,7 @@ export const siteConfig: Site = {
     url: "https://imvikash.me",
   },
   ogImage: "https://imvikash.me/og.png",
-  // ogImage: "https://rdsx.dev/og.png",
+  // ogImage: "https://iamvikash.me/og.png",
   links: {
     linkedin: "https://linkedin.com/in/vikashup2109",
     github: "https://github.com/vikashup2109",

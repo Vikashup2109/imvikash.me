@@ -75,7 +75,7 @@ export async function generateStaticParams(): Promise<
 
 export default function ProjectPage({ params }: ProjectPageProps) {
   const project = getProjectFromParam(params);
-  
+
   if (!project) {
     notFound();
   }
@@ -90,7 +90,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                 size={18}
                 className="group-hover/back:-translate-x-1 transition-transform transform-gpu duration-100 ease-in-out"
               />
-              <span className="sr-only">rdsx.dev</span>
+              <span className="sr-only">iamvikash.me</span>
             </Link>
             <p className="px-2 py-1 text-xs rounded bg-secondary">
               {new Date(project.date).toDateString()}

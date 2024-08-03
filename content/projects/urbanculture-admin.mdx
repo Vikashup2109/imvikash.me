@@ -1,23 +1,20 @@
 ---
 title: Urban Culture (Admin Panel)
-description: Urban Culture is India's leading Online platform for beauty needs at home. Launched in 2020, This platform enables customer to book highly trained and certified beauty professionals at affordable price. As a company, Urban Culture is constantly evolving into newer and better forms. Urban Culture is running operations in more than 10 cities with world class trainers.
+description: When developing the Admin Panel for Urban Culture platform, the focus was on meeting the comprehensive business needs by integrating advanced content management, community engagement tools, detailed analytics, robust security, and ensuring scalability and flexibility. This approach aimed to create a versatile and secure platform that could adapt to the dynamic nature of urban culture, supporting both current operations and future growth.
 tags:
   [
     "Next.js",
     "NodeJS",
-    "Firebase",
-    "GCP (Google Cloud Platforms)",
-    "Flutter",
-    "Docker",
-    "Sanity",
+    "MaterialUI",
     "Firestore",
+    "GCP (Google Cloud Platforms)",
+    "Docker",
   ]
 date: 2023-02-10
 image: "./assets/urbanculture/urbanculture.png"
 imageDark: "./assets/urbanculture/urbanculture.png"
 links:
   [
-    { name: "Website", url: "https://urbanculture.me/" },
     {
       name: "Instagram",
       url: "https://www.instagram.com/urbanculture_beauty/",
@@ -41,40 +38,36 @@ links:
   for it's blog's content management .
 </Callout>
 
+Note: <span> I can not provide the link to shawcase because of too much sensitive information. </span>
+
 ---
 
 ## Tasks I've been involved in.
 
-### Frontend (Website)
+### Backend
 
 Responsible for the entire frontend development process, from initial design to final deployment.
 
-- **Technologies Used**: Leveraged modern web technologies including Next.js, JavaScript (ES6+), Docker, Sanity and responsive frameworks such as TailwindCSS and MaterialUI,.
+- **Server-Side Logic**: Implemented server-side logic using Node.js and Express.js to handle administrative tasks such as user authentication, authorization, and data manipulation. This included setting up RESTful APIs for secure communication between the admin panel and the backend systems.
 
-- **Design Integration and Responsiveness**: Integrated custom designs and UI/UX principles to ensure a user-friendly interface and engaging user experience. Ensured the website is fully responsive across various devices, including desktops and mobile phones.
+- **Database Management**: Integrated Firestore for database management, ensuring that the admin panel could efficiently manage and query data related to users, content, and application settings. This involved designing schemas, implementing CRUD operations, and ensuring data integrity and security.
 
-- **Performance Optimization and Cross-Browser Compatibility**: Optimized website performance through minification of CSS and JavaScript files, image optimization, and lazy loading techniques. Ensured cross-browser compatibility to provide a seamless experience regardless of the browser used.
+- **Authentication and Authorization**: Developed a robust authentication system using JWT (JSON Web Tokens) for secure login and session management. Implemented role-based access control to restrict access to certain functionalities based on the user's role within the admin panel.
 
-- **Testing, Debugging and Deployment**: Conducted thorough testing, including unit tests, integration tests, and manual testing to identify and fix bugs before launch. Also, Managed the deployment process, ensuring the website was securely hosted and updated regularly on GCP.
+- **Data Validation and Security**: Applied validation rules to incoming data to prevent malicious input and ensure data consistency. Implemented encryption for sensitive data and regularly audited the system for vulnerabilities.
 
-### Backend
+- **API Endpoints**: Created API endpoints specifically for the admin panel, catering to the unique needs of managing the application, such as updating user profiles, moderating content, and generating reports.
+
+### Frontend
 
 Responsible for the creation and maintenance of various backend systems, from ideation to final deployment.
 
-- **Key Technologies**:
+- **UI/UX Design**: Designed and developed a user-friendly interface for the admin panel, focusing on simplicity, intuitiveness, and ease of use. The design incorporated feedback from potential users to ensure the panel met their needs.
 
-  - **Node.js**: Utilized Node.js for building fast and scalable network applications, leveraging its non-blocking I/O model to handle concurrent requests efficiently.
-  - **Firestore**: Integrated Firestore, Google's NoSQL document database, for storing and syncing data between users in real-time, enhancing the scalability and performance of applications.
-  - **Google Cloud Platform (GCP)**: Made extensive use of GCP services, particularly Cloud Functions, for serverless computing, allowing for automatic scaling and cost efficiency without managing servers.
+- **Responsive Design**: Ensured the admin panel was fully responsive, allowing administrators to access and manage the application from various devices, including desktops, laptops, and tablets.
 
-- **Brief Of Key Features Implemented**:
+- **Interactive Components**: Developed interactive components such as dashboards, forms for data entry and modification, and tables for displaying lists of users, content, and analytics. These components were designed to facilitate efficient workflow and decision-making.
 
-  - **Slot Availability System**: Engineered a system (which is using multiple APIs) which finds out the slots that are available for user based on user's location and considering partner's availability.
-  - **Booking System**: Re-Engineered the existing booking system to make it compatible to slots Availability System.
-  - **Leave Management System**: Developed the backend of Leave Management System that automate the leave process of partners by giving them a feature directly in their App where they can mark all types of leave anytime.
+- **Dynamic Content Loading**: Implemented dynamic content loading to improve performance, reducing the load times for pages within the admin panel. This was achieved through techniques such as pagination, infinite scrolling, and lazy loading.
 
-- **Security and Performance**: Ensured the security and performance of backend systems by implementing best practices, including secure coding patterns, regular audits, and optimizing database queries.
-
-- **Deployment and Maintenance**: Oversaw the deployment of backend systems to production environments, utilizing CI/CD pipelines for continuous integration and delivery. Also responsible for ongoing maintenance and updates to ensure system reliability and uptime.
-
-- **Collaboration and Communication**: Actively collaborated with QA engineers, and other stakeholders to bridge gaps between backend functionalities and user-facing features.
+- **Access Control Interface**: Designed and implemented an access control interface within the admin panel, allowing administrators to manage user roles and permissions, thereby maintaining the security and integrity of the application.
