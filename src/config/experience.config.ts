@@ -53,7 +53,6 @@ export const experiencesConfig: Experience[] = [
       "Cross-Functional Collaboration: Worked closely with backend developers, UX/UI designers, and product managers to design and deliver high-quality, user-centric products.",
       "Performance Optimization: Applied best practices for web performance optimization, including code splitting and lazy loading, to achieve faster load times and improved SEO.",
       "API Integration: Integrated RESTful APIs to facilitate smooth data flow and functionality within the application, ensuring reliable communication between the frontend and backend systems.",
-      "Developed the official website of LunCo",
     ],
   },
 ];
