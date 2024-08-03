@@ -9,7 +9,7 @@ export default function ProjectSection() {
       a: { date: string | number | Date },
       b: { date: string | number | Date }
     ) => {
-      return new Date(b.date).getTime() - new Date(a.date).getTime();
+      return new Date(a.date).getTime() - new Date(b.date).getTime();
     }
   );
   return (

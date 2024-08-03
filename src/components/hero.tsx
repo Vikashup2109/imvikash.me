@@ -4,8 +4,6 @@ import { Socials } from "@/components/socials";
 import Link from "next/link";
 import ThemeToggler from "@/components/theme/theme-toggler";
 import { Skill } from "@/types";
-// import { Rss } from "lucide-react";
-// import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
@@ -16,12 +14,6 @@ export default function Hero() {
       <div className="flex justify-between items-center mt-6">
         <h1 className="head-text-sm">{portfolioConfig.name}</h1>
         <div className="flex items-center gap-2">
-          {/* <Button size="icon" variant="ghost" className="rounded-full" asChild>
-            <Link href="/feed">
-              <Rss size={18} />
-              <span className="sr-only">rss feed</span>
-            </Link>
-          </Button> */}
           <ThemeToggler />
         </div>
       </div>

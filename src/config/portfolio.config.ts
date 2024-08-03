@@ -16,7 +16,7 @@ export const portfolioConfig: Portfolio = {
   skills: [
     {
       category: "Frontend",
-      items: ["React", "Next.js", "TailwindCSS", "Framer motion"],
+      items: ["React", "Next.js", "TailwindCSS", "Framer motion", "GSAP"],
     },
     {
       category: "Backend",

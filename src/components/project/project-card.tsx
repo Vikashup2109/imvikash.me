@@ -13,12 +13,21 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="flex p-3 justify-between gap-2 rounded-2xl border border-b-8 overflow-hidden">
       <div className="space-y-2 w-full tablet:w-3/5">
-        <Link href={`/projects/${project.slugAsParams}`} className="space-y-2 group/link">
+        <Link
+          href={`/project/${project.slugAsParams}`}
+          className="space-y-2 group/link"
+        >
           <div className="inline-flex items-center gap-1">
-            <div className="flex items-center gap-2 flex-wrap">
-              <h1 className="text-xl font-semibold font-heading">{project.title}</h1>
-              <span className="text-xs px-2 py-1 rounded bg-secondary">
-                {new Date(project.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            <div className="flex items-center gap-2 ">
+              <h1 className="text-xl font-semibold font-heading">
+                {project.title}
+              </h1>
+              <span className="text-xs px-2 py-1 rounded bg-secondary whitespace-nowrap">
+                {new Date(project.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
               </span>
             </div>
             <span className="-translate-x-1 opacity-0 group-hover/link:translate-x-0 group-hover/link:opacity-100 transition-all duration-100 ease-in-out">
@@ -39,24 +48,17 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </p>
           ))}
         </div>
-        <div className="flex flex-wrap items-center gap-2">
+        {/* <div className="flex flex-wrap items-center gap-2">
           {project.links.map((link, i) => (
-            <a
-              key={i}
-              href={link.url}
-              target="_blank"
-              className="social-link"
-            >
+            <a key={i} href={link.url} target="_blank" className="social-link">
               {IconMap[link.name.toLowerCase() as keyof typeof IconMap]}
-              <span className="sr-only">
-                {`${link.name} - ${link.url}`}
-              </span>
+              <span className="sr-only">{`${link.name} - ${link.url}`}</span>
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
       <div className="w-2/5 aspect-video overflow-hidden hover:border duration-100 transition-all transform-gpu ease-in-out rounded-xl hidden tablet:block">
-        <Link href={`/projects/${project.slugAsParams}`}>
+        <Link href={`/project/${project.slugAsParams}`}>
           <Picture
             image={project.image}
             imageDark={project.imageDark}
