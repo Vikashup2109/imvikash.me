@@ -5,7 +5,7 @@ export const portfolioConfig: Portfolio = {
   tagline: "I whisper code 🗣️ into existence 🌟",
   bio: "Hey 👋 Vikash here! I am a fullstack software developer. I build web applications, mobile applications, backend servers, and desktop apps.",
   resume:
-    "https://drive.google.com/file/d/1QhIvuWv7ABHMe19xRUYxa-FX1SwXppTG/view?usp=sharing",
+    "https://drive.google.com/file/d/1eOBlSUKBX80MC9kCswgcUi3cBstyQy0y/view?usp=sharing",
   links: {
     github: "https://github.com/vikashup2109",
     // twitter: "https://x.com/rds_agi",
