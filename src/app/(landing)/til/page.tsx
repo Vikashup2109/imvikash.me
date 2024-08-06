@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: `${siteConfig.siteUrl}/til`,
     images: [
       {
-        url: `${siteConfig.siteUrl}/til-og.png`,
+        url: `${siteConfig.siteUrl}/og.png`,
         width: 1800,
         height: 1000,
         alt: `Today I learned | ${siteConfig.name} | ${siteConfig.creator.name}`,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: `Today I learned | ${siteConfig.name} | ${siteConfig.creator.name}`,
     description: `A list of things I learned today | Hey, I'm ${siteConfig.creator.name} and this is a journal of things I learned. I keep it as a reminder of the things I've learned and to share it with others.`,
     images: {
-      url: `${siteConfig.siteUrl}/til-og.png`,
+      url: `${siteConfig.siteUrl}/og.png`,
       width: 1800,
       height: 1000,
       alt: `Today I learned | ${siteConfig.name} | ${siteConfig.creator.name}`,
@@ -50,7 +50,11 @@ export default function TIL() {
               <div className="w-[2px] h-full absolute top-3 left-2 -translate-x-1/2 bg-accent -z-10"></div>
             )}
             <span className="text-sm ml-5 px-2 py-1 rounded bg-secondary">
-              {new Date(til.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+              {new Date(til.date).toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+              })}
             </span>
             <div className="ml-7">
               <MDXContentRenderer code={til.body} />
